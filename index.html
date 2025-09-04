@@ -27,6 +27,63 @@
   <meta name="twitter:image" content="https://ik.imagekit.io/gmbh5tyqu/WhatsApp%20Image%202025-09-04%20at%2019.03.31_a088e091.jpg?updatedAt=1756987970816">
 
   <style>
+/* ======== Responsif HP kecil (max 480px) ======== */
+@media (max-width: 480px) {
+  body {
+    padding: 8px;
+  }
+
+  header h1 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .search-box {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: center;
+  }
+
+  .filters .filter-btn {
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr; /* Selalu 1 kolom di HP */
+    gap: 12px;
+  }
+
+  .card {
+    border-radius: 12px;
+  }
+
+  .title {
+    font-size: 15px;
+  }
+
+  .meta {
+    font-size: 13px;
+  }
+
+  .tags .tag {
+    font-size: 12px;
+    padding: 3px 8px;
+  }
+
+  .bottom-nav {
+    font-size: 13px;
+    padding: 8px 0;
+  }
+}
+
+   
     :root {
       --bg: #0b0e13;
       --card: #121720;
@@ -246,4 +303,5 @@
   
 </body>
 </html>
+
 
