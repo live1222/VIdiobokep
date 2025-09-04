@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="id">
 
-<!-- ✅ Popunder Adsterra -->
-  <script type="text/javascript" src="<script type='text/javascript' src='//principlespite.com/aa/81/45/aa81456e99cb0d07a3bf6420cb618b8a.js'></script>"></script>
 
-  <!-- ✅ Social Bar Adsterra -->
-  <script type="text/javascript" src="<script type='text/javascript' src='//principlespite.com/91/38/9e/91389e2b4bbf061ab6bae31c5198d441.js'></script>"></script>
+ <!-- ✅ Popunder Adsterra -->
+  <script type='text/javascript' src='//principlespite.com/aa/81/45/aa81456e99cb0d07a3bf6420cb618b8a.js'></script>
+  
+<!-- ✅ Social Bar Adsterra -->
+  <script type="text/javascript" src="//principlespite.com/91/38/9e/91389e2b4bbf061ab6bae31c5198d441.js"></script>
 
 <head>
-
- <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Video H0t </title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Galeri Video Saya</title>
+  <meta name="description" content="Website galeri video sederhana dan responsif untuk menampilkan koleksi video Anda."/>
 
   <!-- Open Graph (Facebook, WhatsApp, Telegram) -->
   <meta property="og:title" content="Video H0t - Mature C0ntent">
@@ -25,12 +27,6 @@
   <meta name="twitter:description" content="This video is for 18+ only. Click to watch.">
   <meta name="twitter:image" content="https://ik.imagekit.io/gmbh5tyqu/WhatsApp%20Image%202025-09-04%20at%2019.03.31_a088e091.jpg?updatedAt=1756987970816">
 
-
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Galeri Video Saya</title>
-  <meta name="description" content="Website galeri video sederhana dan responsif untuk menampilkan koleksi video Anda."/>
-
   <style>
     :root {
       --bg: #0b0e13;
@@ -39,35 +35,23 @@
       --muted: #9eb0c6;
       --accent: #00d084;
       --accent-2: #ffd166;
-      --ring: rgba(0, 208, 132, 0.35);
       --shadow: 0 10px 30px rgba(0,0,0,.35);
       --radius: 16px;
     }
-
-    * { box-sizing: border-box; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     html, body { height: 100%; }
-
     body {
-      margin: 0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
-      color: var(--text);
-
-      /* background gambar */
+      font-family: system-ui, sans-serif;
       background: url("https://ik.imagekit.io/gmbh5tyqu/WhatsApp%20Image%202025-09-04%20at%2019.03.31_a088e091.jpg?updatedAt=1756987970816") no-repeat center center fixed;
       background-size: cover;
+      color: var(--text);
       position: relative;
       z-index: 0;
     }
-
-    /* overlay transparan */
     body::before {
-      content: "";
-      position: fixed;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.55);
-      z-index: -1;
+      content: ""; position: fixed; inset: 0;
+      background: rgba(0, 0, 0, 0.55); z-index: -1;
     }
-
     header {
       position: sticky; top: 0; z-index: 20;
       backdrop-filter: blur(8px);
@@ -77,44 +61,38 @@
     .wrap { max-width: 1200px; margin: 0 auto; padding: 16px; }
     .brand { display: flex; align-items: center; gap: 10px; }
     .logo { width: 36px; height: 36px; border-radius: 12px; background: linear-gradient(135deg, var(--accent), var(--accent-2)); box-shadow: var(--shadow); }
-    h1 { font-size: clamp(20px, 2.6vw, 32px); margin: 0; letter-spacing: .4px; }
+    h1 { font-size: clamp(20px, 4vw, 32px); margin: 0; letter-spacing: .4px; }
 
     .toolbar { display: grid; grid-template-columns: 1fr auto; gap: 12px; margin-top: 12px; }
-    .search {
-      display: flex; align-items: center; gap: 10px; padding: 12px 14px; border-radius: var(--radius);
-      background: var(--card); border: 1px solid rgba(255,255,255,.06);
-      box-shadow: var(--shadow);
-    }
+    .search { display: flex; align-items: center; gap: 10px; padding: 12px 14px; border-radius: var(--radius); background: var(--card); border: 1px solid rgba(255,255,255,.06); box-shadow: var(--shadow); }
     .search input { flex: 1; font-size: 16px; border: none; outline: none; background: transparent; color: var(--text); }
     .filters { display: flex; gap: 8px; flex-wrap: wrap; }
-    .chip { padding: 10px 12px; border-radius: 999px; border: 1px solid rgba(255,255,255,.1); background: #0e1420; color: var(--muted); cursor: pointer; user-select: none; }
+    .chip { padding: 10px 12px; border-radius: 999px; border: 1px solid rgba(255,255,255,.1); background: #0e1420; color: var(--muted); cursor: pointer; }
     .chip.active { color: #0b0e13; background: var(--accent); border-color: var(--accent); }
 
     main { padding: 24px 0 90px; }
-    .grid { display: grid; gap: 16px; grid-template-columns: repeat(12, 1fr); }
-    @media (max-width: 1199px) { .grid { grid-template-columns: repeat(8, 1fr); } }
-    @media (max-width: 799px) { .grid { grid-template-columns: repeat(4, 1fr); } }
+    .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
 
-    .card { grid-column: span 4; background: var(--card); border: 1px solid rgba(255,255,255,.06); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); display: flex; flex-direction: column; }
-    @media (max-width: 799px) { .card { grid-column: span 4; } }
-
+    .card { background: var(--card); border: 1px solid rgba(255,255,255,.06); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); display: flex; flex-direction: column; }
     .thumb { position: relative; aspect-ratio: 16/9; background: #0a0f17; }
     .thumb button.play { position: absolute; inset: 0; margin: auto; width: 64px; height: 64px; border-radius: 999px; background: rgba(0,0,0,.45); border: 2px solid rgba(255,255,255,.6); display: grid; place-items: center; cursor: pointer; transition: transform .15s ease; }
     .thumb button.play:hover { transform: scale(1.06); }
     .thumb button.play:before { content: ""; display: block; width: 0; height: 0; border-left: 20px solid white; border-top: 12px solid transparent; border-bottom: 12px solid transparent; margin-left: 3px; }
-
     .media { width: 100%; height: 100%; object-fit: cover; display: block; }
     .body { padding: 14px; display: grid; gap: 10px; }
-    .title { font-size: 16px; font-weight: 700; line-height: 1.3; }
+    .title { font-size: clamp(14px, 3vw, 18px); font-weight: 700; line-height: 1.3; }
     .meta { font-size: 13px; color: var(--muted); display: flex; gap: 8px; flex-wrap: wrap; }
     .tags { display: flex; gap: 6px; flex-wrap: wrap; }
     .tag { font-size: 12px; padding: 4px 8px; background: rgba(255,255,255,.06); border-radius: 999px; color: var(--muted); }
 
-    .bottom-nav { position: fixed; z-index: 30; bottom: 12px; left: 50%; transform: translateX(-50%); background: rgba(17,22,30,.9); border: 1px solid rgba(255,255,255,.08); border-radius: 999px; box-shadow: var(--shadow); display: flex; gap: 6px; padding: 8px; }
-    .bottom-nav a { text-decoration: none; color: var(--text); font-size: 14px; padding: 8px 12px; border-radius: 999px; }
+    .bottom-nav { position: fixed; bottom: 0; left: 0; width: 100%; display: flex; justify-content: space-around; background: rgba(17,22,30,.95); padding: 10px 0; border-top: 1px solid rgba(255,255,255,.1); }
+    .bottom-nav a { text-decoration: none; color: var(--text); font-size: clamp(12px, 2vw, 16px); padding: 8px 12px; border-radius: 999px; }
     .bottom-nav a.active, .bottom-nav a:hover { background: var(--accent); color: #0b0e13; }
+    @media(min-width: 768px) {
+      .bottom-nav { width: auto; left: 50%; transform: translateX(-50%); border-radius: 999px; padding: 8px 16px; }
+    }
 
-    footer { color: var(--muted); text-align: center; padding: 18px 0 34px; }
+    footer { color: var(--muted); text-align: center; padding: 18px 0 34px; font-size: clamp(12px, 2vw, 14px); }
     .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
   </style>
 </head>
@@ -134,9 +112,8 @@
           <button class="chip active" data-filter="all">Semua</button>
           <button class="chip" data-filter="mlf">mlf</button>
           <button class="chip" data-filter="ska">ska</button>
-          <button class="chip" data-filter="live">Live</button>
           <button class="chip" data-filter="cover">Cover</button>
-          <button class="chip" data-filter="bokep">bokep</button>
+          <button class="chip" data-filter="drive">Drive</button>
         </div>
       </div>
     </div>
@@ -144,76 +121,37 @@
 
   <main class="wrap">
     <section id="video-grid" class="grid" aria-live="polite">
-
       <!-- contoh video lokal -->
-      <article class="card" data-tags="mlf">
+      <article class="card" data-tags="mlf reggae vespa">
         <div class="thumb">
-          <video preload="none" poster="thumbs/vespa-ride.jpg" class="media" playsinline>
+          <video preload="none" poster="https://via.placeholder.com/600x338.png?text=Video+MLF" class="media" playsinline>
             <source src="videos/vespa-ride.mp4" type="video/mp4"/>
           </video>
-          <button class="play" aria-label="Putar video: mlf"></button>
+          <button class="play" aria-label="Putar video: MLF"></button>
         </div>
         <div class="body">
-          <div class="title">mlf</div>
+          <div class="title">MLF</div>
           <div class="meta">Durasi ~3:21 • MP4</div>
-          <div class="tags"><span class="tag">reggae</span><span class="tag">vespa</span><span class="tag">mlf</span><span class="tag">ml</span></div>
-        </div>
-      </article>
- <!-- contoh video lokal drive -->
-     <article class="card" data-tags="drive">
-  <div class="thumb">
-    <video preload="none" 
-           poster="https://via.placeholder.com/600x338.png?text=Video+Drive" 
-           class="media" playsinline>
-      <!-- paste link asli langsung dari Google Drive -->
-      <source src="https://drive.google.com/file/d/1yE_RiYPCyhzt74p__2yeKMHdPB1t8iuv/view?usp=sharing" type="video/mp4"/>
-    </video>
-    <button class="play" aria-label="Putar video dari Google Drive"></button>
-  </div>
-  <div class="body">
-    <div class="title">Video dari Google Drive</div>
-    <div class="meta">Durasi ~4:12 • MP4</div>
-    <div class="tags">
-      <span class="tag">drive</span>
-      <span class="tag">reggae</span>
-    </div>
-  </div>
-</article>
-
-
-
-
-      <!-- contoh video lain -->
-      <article class="card" data-tags="cover reggae santai">
-        <div class="thumb">
-          <video preload="none" poster="https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=1200&auto=format&fit=crop" class="media" playsinline>
-            <source src="https://ik.imagekit.io/gmbh5tyqu/WhatsApp%20Video%202025-09-04%20at%2019.47.26_5d2f65a2.mp4?updatedAt=1756990112392" type="video/mp4"/>
-          </video>
-          <button class="play" aria-label="Putar video: Cover Kopi Hangat"></button>
-        </div>
-        <div class="body">
-          <div class="title">Cover: Kopi Hangat</div>
-          <div class="meta">Durasi ~2:58 • MP4</div>
-          <div class="tags"><span class="tag">cover</span><span class="tag">reggae</span><span class="tag">santai</span></div>
+          <div class="tags"><span class="tag">reggae</span><span class="tag">vespa</span></div>
         </div>
       </article>
 
-      <!-- contoh video lain -->
-      <article class="card" data-tags="bokep">
+      <!-- contoh video Google Drive -->
+      <article class="card" data-tags="drive reggae">
         <div class="thumb">
-          <video preload="none" poster="https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=1200&auto=format&fit=crop" class="media" playsinline>
+          <video preload="none" poster="https://via.placeholder.com/600x338.png?text=Drive+Video" class="media" playsinline>
             <source src="https://drive.google.com/file/d/1yE_RiYPCyhzt74p__2yeKMHdPB1t8iuv/view?usp=sharing" type="video/mp4"/>
           </video>
-          <button class="play" aria-label="Putar video: Cover Kopi Hangat"></button>
+          <button class="play" aria-label="Putar video Google Drive"></button>
         </div>
         <div class="body">
-          <div class="title">Cover: Kopi Hangat</div>
-          <div class="meta">Durasi ~2:58 • MP4</div>
-          <div class="tags"><span class="tag">cover</span><span class="tag">reggae</span><span class="tag">bokep</span></div>
+          <div class="title">Video Google Drive</div>
+          <div class="meta">Durasi ~4:12 • MP4</div>
+          <div class="tags"><span class="tag">drive</span><span class="tag">reggae</span></div>
         </div>
       </article>
 
-      <!-- contoh video lain -->
+ <!-- contoh video lain -->
       <article class="card" data-tags="cover reggae santai">
         <div class="thumb">
           <video preload="none" poster="https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=1200&auto=format&fit=crop" class="media" playsinline>
@@ -228,6 +166,8 @@
         </div>
       </article>
 
+<script async="async" data-cfasync="false" src="//principlespite.com/3b495bbe43d1946c35dd6db2a4044df1/invoke.js"></script>
+<div id="container-3b495bbe43d1946c35dd6db2a4044df1"></div>
     </section>
 
     <footer>
@@ -238,13 +178,13 @@
   <nav class="bottom-nav">
     <a href="#" class="active">Home</a>
     <a href="#video-grid">Video</a>
-    <a href="#" onclick="alert('Tulis deskripsi singkat di bagian About.');return false;">About</a>
+    <a href="#" onclick="alert('About: deskripsi singkat.');return false;">About</a>
     <a href="mailto:you@example.com">Contact</a>
   </nav>
 
+  <!-- ✅ Script filter + search -->
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
-
     const search = document.getElementById('search');
     const chips = Array.from(document.querySelectorAll('.chip'));
     const cards = Array.from(document.querySelectorAll('.card'));
@@ -261,103 +201,51 @@
         card.style.display = (matchText && matchTag) ? '' : 'none';
       });
     }
-
     search.addEventListener('input', applyFilter);
     chips.forEach(ch => ch.addEventListener('click', () => {
       chips.forEach(x => x.classList.remove('active'));
       ch.classList.add('active');
       applyFilter();
     }));
+  </script>
 
-    function makeYouTubeIframe(id) {
-      const iframe = document.createElement('iframe');
-      iframe.width = '560';
-      iframe.height = '315';
-      iframe.src = `https://www.youtube.com/embed/${id}?autoplay=1&rel=0`;
-      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
-      iframe.allowFullscreen = true;
-      iframe.className = 'media';
-      return iframe;
+  <!-- ✅ Script konversi Google Drive -->
+  <script>
+    function convertDriveLink(url) {
+      const match = url.match(/\/d\/([a-zA-Z0-9_-]+)\//);
+      if (match && match[1]) {
+        return `https://drive.google.com/uc?export=download&id=${match[1]}`;
+      }
+      return url;
     }
-
-    document.querySelectorAll('.thumb').forEach(th => {
-      const playBtn = th.querySelector('button.play');
-      playBtn?.addEventListener('click', () => {
-        const yt = th.hasAttribute('data-yt');
-        if (yt) {
-          const id = th.querySelector('[data-ytid]').textContent.trim();
-          th.innerHTML = '';
-          th.appendChild(makeYouTubeIframe(id));
-        } else {
-          const v = th.querySelector('video');
-          if (v) { v.controls = true; v.play(); playBtn?.remove?.(); }
-        }
-      });
+    document.querySelectorAll('video source').forEach(src => {
+      if (src.src.includes("drive.google.com/file/d/")) {
+        src.src = convertDriveLink(src.src);
+      }
     });
   </script>
 
-...
-</main>
-
-<footer>
-  © <span id="year"></span> Galeri Video Saya • Dibuat dengan ❤
-</footer>
-
-<nav class="bottom-nav">
-  <a href="#" class="active">Home</a>
-  <a href="#video-grid">Video</a>
-  <a href="#" onclick="alert('Tulis deskripsi singkat di bagian About.');return false;">About</a>
-  <a href="mailto:you@example.com">Contact</a>
-</nav>
-
-<!-- ✅ Script konversi Google Drive Pindah ke sini -->
-<script>
-  function convertDriveLink(url) {
-    const match = url.match(/\/d\/([a-zA-Z0-9_-]+)\//);
-    if (match && match[1]) {
-      return `https://drive.google.com/uc?export=download&id=${match[1]}`;
-    }
-    return url;
-  }
-
-  document.querySelectorAll('video source').forEach(src => {
-    if (src.src.includes("drive.google.com/file/d/")) {
-      src.src = convertDriveLink(src.src);
-    }
-  });
-</script>
-
-<!-- script filter + play tetap di bawah -->
-<script>
-  ...
-</script>
-</body>
-</html>
-
-<!-- ✅ Script Play Button + Redirect Direct Link -->
+  <!-- ✅ Script Play Button + Redirect Direct Link -->
   <script>
     document.querySelectorAll('.thumb').forEach(th => {
       const playBtn = th.querySelector('button.play');
       playBtn?.addEventListener('click', () => {
         const v = th.querySelector('video');
         if (v) { v.controls = true; v.play(); playBtn?.remove?.(); }
-
-        // Direct Link Adsterra → buka di tab baru setelah klik Play
+        // Redirect Adsterra Direct Link setelah 5 detik
         setTimeout(() => {
-          window.open("https://principlespite.com/r1dpiyp75?key=a673c3783b4b5dfa58b7044fe309845a");
+          window.open("https://principlespite.com/r1dpiyp75?key=a673c3783b4b5dfa58b7044fe309845a", "_blank");
         }, 5000);
       });
     });
-    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 
+<!-- ✅ Social Bar Adsterra -->
+  <script type="text/javascript" src="//principlespite.com/91/38/9e/91389e2b4bbf061ab6bae31c5198d441.js"></script>
 
- <!-- ✅ Social Bar Adsterra -->
-  <script type="text/javascript" src="<script type='text/javascript' src='//principlespite.com/91/38/9e/91389e2b4bbf061ab6bae31c5198d441.js'></script>"></script>
 
-<div id="native-banner"></div>
+  <!-- ✅ Native Banner -->
+  <div id="native-banner"></div>
   <script type="text/javascript" src="//your-native-banner-link.js"></script>
-
 </body>
 </html>
-
