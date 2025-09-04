@@ -28,88 +28,53 @@
 
   <style>
 
-    /* ========== CSS UTAMA (desktop / tablet / HP) ========== */
-    :root {
-      --bg: #0b0e13;
-      --card: #121720;
-      --text: #e8eef7;
-      --muted: #9eb0c6;
-      --accent: #00d084;
-      --accent-2: #ffd166;
-      --shadow: 0 10px 30px rgba(0,0,0,.35);
-      --radius: 16px;
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    html,body { height: 100%; }
-    body {
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Noto Sans, Arial;
-      background: url("https://ik.imagekit.io/gmbh5tyqu/WhatsApp%20Image%202025-09-04%20at%2019.03.31_a088e091.jpg?updatedAt=1756987970816") no-repeat center center fixed;
-      background-size: cover;
-      color: var(--text);
-      position: relative;
-    }
-    body::before {
-      content: ""; position: fixed; inset: 0; background: rgba(0,0,0,0.55); z-index: -1;
-    }
-
-    header { position: sticky; top: 0; z-index: 60; backdrop-filter: blur(8px); background: rgba(11,14,19,.6); border-bottom: 1px solid rgba(255,255,255,.06); }
-    .wrap { max-width: 1200px; margin: 0 auto; padding: 16px; }
-    .brand { display:flex; align-items:center; gap:12px; }
-    .logo { width:36px; height:36px; border-radius:10px; background: linear-gradient(135deg, var(--accent), var(--accent-2)); box-shadow: var(--shadow); }
-    h1 { font-size: clamp(20px, 4vw, 32px); margin: 0; }
-
-    .toolbar { display: grid; grid-template-columns: 1fr auto; gap:12px; margin-top:12px; align-items:center; }
-    .search { display:flex; align-items:center; gap:10px; padding: 12px; border-radius: 12px; background: var(--card); border:1px solid rgba(255,255,255,.04); width:100%; }
-    .search input { flex:1; font-size:16px; border: none; outline:none; background:transparent; color:var(--text); }
-    .filters { display:flex; gap:8px; flex-wrap:wrap; justify-content:flex-end; }
-
-    .chip { padding:10px 12px; border-radius:999px; background:#0e1420; color:var(--muted); border:1px solid rgba(255,255,255,.03); cursor:pointer; font-size:14px; }
-    .chip.active { background:var(--accent); color:#0b0e13; border-color:var(--accent); }
-
-    main { padding: 24px 0 110px; }
-    .grid { display:grid; gap:16px; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); align-items:start; }
-
-    .card { background:var(--card); border-radius:12px; overflow:hidden; box-shadow:var(--shadow); border:1px solid rgba(255,255,255,.04); display:flex; flex-direction:column; }
-    .thumb { position:relative; aspect-ratio: 16/9; background:#0a0f17; }
-    .thumb .media { width:100%; height:100%; object-fit:cover; display:block; }
-    .thumb button.play { position:absolute; inset:0; margin:auto; width:64px; height:64px; border-radius:999px; background:rgba(0,0,0,.45); border:2px solid rgba(255,255,255,.6); display:grid; place-items:center; cursor:pointer; transition:transform .14s ease; }
-    .thumb button.play:hover { transform:scale(1.06); }
-    .thumb button.play:before { content:""; display:block; width:0; height:0; border-left:20px solid white; border-top:12px solid transparent; border-bottom:12px solid transparent; margin-left:3px; }
-
-    .body { padding:14px; display:grid; gap:8px; }
-    .title { font-size: clamp(14px, 2.5vw, 18px); font-weight:700; }
-    .meta { color:var(--muted); font-size:13px; }
-    .tags { display:flex; gap:6px; flex-wrap:wrap; }
-    .tag { font-size:12px; padding:4px 8px; background: rgba(255,255,255,.04); border-radius:999px; color:var(--muted); }
-
-    .ad-slot { background: rgba(255,255,255,0.02); padding:12px; border-radius:12px; display:flex; align-items:center; justify-content:center; min-height:80px; }
-
-    .bottom-nav { position:fixed; bottom:0; left:0; width:100%; display:flex; justify-content:space-around; background: rgba(17,22,30,.95); padding:10px 0; border-top:1px solid rgba(255,255,255,.06); z-index:70; }
-    .bottom-nav a { text-decoration:none; color:var(--text); padding:8px 12px; border-radius:999px; }
-    .bottom-nav a.active, .bottom-nav a:hover { background:var(--accent); color:#0b0e13; }
-    @media(min-width:768px) {
-      .bottom-nav { width:auto; left:50%; transform:translateX(-50%); border-radius:999px; padding:8px 16px; }
-    }
-
-    footer { color: var(--muted); text-align:center; padding:18px 0 34px; font-size:14px; }
-
-    /* ==== Tampilan khusus HP kecil ==== */
-@media (max-width: 480px) {
-  .wrap {padding: 10px;}
-  .header h1 {font-size: 18px;
-  .text-align: left; }
-  .toolbar {grid-template-columns: 1fr;gap: 8px}
-  .search {width: 100%}
-  .filters {justify-content: flex-start;gap: 6px;flex-wrap: wrap;}
-  .chip {padding: 6px 10px;font-size: 13px;}
-  .grid {grid-template-columns: 1fr; /* Jadi 1 kolom penuh */gap: 14px;}
-  .card {border-radius: 10px}
-  .thumb button.play {width: 50px;height: 50px;}
-  .title {font-size: 15px;}
-  .meta {font-size: 12px}
-  .bottom-nav {padding: 8px 0;font-size: 13px;}
-  .bottom-nav a {padding: 6px 10px;}
+ /* ===== BOTTOM NAV ===== */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #1c1c1c;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #333;
+  padding: 6px 0;
+  z-index: 1000;
 }
+
+.bottom-nav a {
+  flex: 1;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  padding: 8px 0;
+  transition: all 0.3s ease;
+}
+
+.bottom-nav a.active {
+  color: #00ff6c;
+  font-weight: bold;
+}
+
+.bottom-nav a:hover {
+  color: #00ff6c;
+}
+
+/* ==== RESPONSIF HP ==== */
+@media (max-width: 480px) {
+  .bottom-nav {
+    font-size: 12px;
+    padding: 4px 0;
+  }
+
+  .bottom-nav a {
+    font-size: 12px;
+    padding: 6px 0;
+  }
+}
+
   </style>
 
  
@@ -265,6 +230,7 @@
   
 </body>
 </html>
+
 
 
 
